@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Digitizer - Digital Marketing Agency in Dubai</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<style>
+    /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: black;
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, div {
+  color: black;
+}
+
+
+h1, h2, h3 {
+    color: #000; /* Dark text color */
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+    color: rgb(83, 36, 36); /* Dark gray for better text contrast */
+}
+
+/* Header Styles */
+header {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px 0;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+header nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: black;
+    color: red; /* White text */
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: black; /* Dark gray on hover */
+}
+
+/* Home Section */
+#home {
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 80px 0;
+}
+
+#home h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#home .cta-button {
+    background-color: #fff; /* White button */
+    color: #000; /* Black text */
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#home .cta-button:hover {
+    background-color: #444; /* Dark gray on hover */
+    color: #fff; /* White text */
+}
+
+/* About Section */
+#about {
+    background-color: black; /* White background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#about p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#about h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #111; /* Dark text */
+}
+
+/* Services Section */
+#services {
+    background-color: #f4f4f4; /* Light gray */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#services ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#services ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Clients Section */
+#clients {
+    background-color: #fff; /* White background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#clients .client-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#clients .client-logo {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 30px;
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#clients .client-logo:hover {
+    background-color: #444; /* Dark gray on hover */
+}
+
+
+
+/* Client Success Section */
+#client-success {
+    background-color: #fff; /* White background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: #111; /* Dark background */
+    color: red; /* White text */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(73, 24, 24, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Press Releases Section */
+#press-releases {
+    background-color: #f4f4f4; /* Light gray */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#press-releases ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#press-releases ul li a {
+    text-decoration: none;
+    color: #111; /* Dark text */
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+#press-releases ul li a:hover {
+    color: #444; /* Dark gray on hover */
+}
+
+/* Newsletter Section */
+#newsletter {
+    background-color: red; /* Black background */
+    color: #fff; /* White text */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#newsletter h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+#newsletter input[type="email"] {
+    padding: 15px;
+    font-size: 18px;
+    width: 300px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#newsletter button {
+    background-color: #fff; /* White button */
+    color: #000; /* Black text */
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#newsletter button:hover {
+    background-color:black; /* Dark gray on hover */
+    color: #fff; /* White text */
+}
+
+/* Footer Section */
+footer {
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer .contact-details {
+    margin-bottom: 20px;
+}
+
+footer .social-icons a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+footer .social-icons a:hover {
+    color: #444; /* Dark gray on hover */
+}
+
+footer a {
+    color: #000; /* Blue link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ff5722; /* Orange link color on hover */
+}
+
+    /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2d3e50;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #009688; /* Teal */
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+header nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #00796b; /* Darker Teal */
+}
+
+/* Home Section */
+#home {
+    background-color: #0288d1; /* Light Blue */
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#home h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#home .cta-button {
+    background-color: #ff5722; /* Orange */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#home .cta-button:hover {
+    background-color: #e64a19; /* Darker Orange */
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#about p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#about h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0288d1;
+}
+
+/* Services Section */
+#services {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#services ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#services ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Clients Section */
+#clients {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#clients .client-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#clients .client-logo {
+    background-color: #0288d1;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#clients .client-logo:hover {
+    background-color: #0277bd; /* Darker Blue */
+}
+
+
+/* Client Success Section */
+#client-success {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: #0288d1;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Press Releases Section */
+#press-releases {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#press-releases ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#press-releases ul li a {
+    text-decoration: none;
+    color: #0288d1;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+#press-releases ul li a:hover {
+    color: #ff5722; /* Orange */
+}
+
+/* Newsletter Section */
+#newsletter {
+    background-color: black; /* Teal */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#newsletter h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+#newsletter input[type="email"] {
+    padding: 15px;
+    font-size: 18px;
+    width: 300px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#newsletter button {
+    background-color: #ff5722; /* Orange */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#newsletter button:hover {
+    background-color: #e64a19; /* Darker Orange */
+}
+
+/* Footer Section */
+footer {
+    background-color: rgb(127, 57, 57);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer .contact-details {
+    margin-bottom: 20px;
+}
+
+footer .social-icons a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+footer .social-icons a:hover {
+    color: #ff5722; /* Orange */
+}
+
+footer a {
+    color: black; /* Blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ff5722; /* Orange */
+}
+#top-courses, #top-instructors {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: white;
+    color: #333;
+}
+.offer-section {
+  background: linear-gradient(to right, #000, #111);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.offer-highlight {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.countdown-timer {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.timer-box {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #0e1514;
+  min-width: 80px;
+}
+
+.timer-box span {
+  display: block;
+  font-size: 1em;
+  margin-top: 5px;
+  color: #aaa;
+}
+
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.course-list, .instructor-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course-item, .instructor-item {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+button.enroll-btn {
+    background-color: #000;
+    color: red;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.enroll-btn:hover {
+    background-color: #444;
+}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.hero-section {
+  display: flex;
+  background: black;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.hero-right {
+  padding: 50px;
+  width: 50%;
+}
+
+.hero-right h1 {
+  font-size: 3rem;
+}
+
+.hero-right .highlight {
+  color: #f7c600;
+}
+
+.hero-right a {
+  color: #f7c600;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.hero-right a:hover {
+  color: white;
+}
+  .client-logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 0;
+  background-color: #111;
+}
+
+.client-logo img {
+  height: 113px;
+  width: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.client-logo img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.choose-card {
+    background-color: black;
+    color:red;
+    border-radius: 30px;
+    padding: 30px;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.choose-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.choose-card h3 {
+    font-size: 20px;
+    color: red;
+}
+
+.choose-card p {
+    color: white;
+    font-size: 14px;
+}
+.features-container {
+  display: inline-block;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* optional, allows wrap on smaller screens */
+}
+.feature-box {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 30px;
+  width: 250px;
+  text-align: center;
+}
+.feature-title {
+  color: red;
+  font-weight: bold;
+}
+
+
+
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Digitizer</h1>
+            <p>Your Digital Marketing Partner in Dubai</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="hero-left">
+          <img src="C:\Users\Dell\Pictures\ka.png" alt="Creative" />
+        </div>
+        <div class="hero-right">
+          <h1><span>Digital</span> Marketing Agency in <span class="highlight">Dubai</span></h1>
+          <p>At Digitizer, a leading digital marketing agency...</p>
+          <h3>Understand Your Vision</h3>
+          <p>We take the time to understand your business...</p>
+          <a href="#about">Learn more about us ➜</a>
+        </div>
+      </section>
+      
+
+
+    <section id="about">
+        <h2>Our Approach</h2>
+        <p><strong>At Digitizer, a leading digital marketing agency in Dubai, we take a dynamic approach that combines strategy, innovation, and data insights:</strong></p>
+        <h3>Understand Your Vision</h3>
+        <p>We take the time to understand your business goals, ensuring every campaign is aligned with your brand’s unique needs.</p>
+        <h3>Execute with Precision</h3>
+        <p>From design to delivery, we bring ideas to life with strategies that drive results.</p>
+        <h3>Analyze and Optimize</h3>
+        <p>Using advanced analytics, we refine campaigns to ensure maximum impact and measurable success.</p>
+        <p>Whether you need an SEO company in Dubai or a partner to amplify your social media presence, we deliver exceptional results.</p>
+        <a href="#services" class="cta-button">Learn More About Our Services</a>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p><strong>Digitizer is a 360-degree digital marketing agency in Dubai, offering a full spectrum of services to help your business grow in the UAE's competitive market.</strong></p>
+        <ul>
+            <li><strong>SEO Optimization</strong> - Improve your search engine rankings and drive organic traffic.</li>
+            <li><strong>Social Media Marketing</strong> - Build your brand and engage with customers across social platforms.</li>
+            <li><strong>PPC Advertising</strong> - Manage and optimize paid ads for maximum ROI.</li>
+            <li><strong>Content Marketing</strong> - Create engaging content to attract and retain your target audience.</li>
+            <li><strong>Website Design & Development</strong> - Craft user-friendly websites to enhance your online presence.</li>
+        </ul>
+        <p>Whether you are struggling to manage your social media accounts or need SEO service in Dubai, we’ve got you covered.</p>
+    </section>
+
+    <section id="clients">
+        <h2>Our Clients</h2>
+        <p>From startups to established businesses, we’ve partnered with some of the most innovative brands in the UAE and beyond. Each collaboration reflects our commitment to excellence.</p>
+        <div class="client-logos">
+            <div class="client-logo">
+              <img src="https://etimg.etb2bimg.com/photo/98300892.cms" alt="Client 1" />
+            </div>
+            <div class="client-logo">
+              <img src="data:image/png;base64,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" alt="Client 2" />
+            </div>
+            <div class="client-logo">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnf4Asuaxf-uQ5sJMcFPLExUelaQB-YT2dYw&s" alt="Client 3" />
+            </div>
+          </div>
+          
+    </section>
+    
+
+      
+      
+    <section id="top-courses">
+        <h2>Top Courses</h2>
+        <div class="course-list">
+            <div class="course-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQupAH4HsYir-ZqMyc52WejuT4_foVxprxVAg&s" alt="Digital Marketing 101">
+                <h3>Digital Marketing 101</h3>
+                <p>Price: ₹999</p>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+            <div class="course-item">
+                <img src="https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg" alt="SEO Mastery">
+                <h3>Web Development</h3>
+                <p>Price: ₹1499</p>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="top-instructors">
+        <h2>Top Instructors</h2>
+        <div class="instructor-list">
+            <div class="instructor-item">
+                <img src="data:image/jpeg;base64,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" alt="John Doe">
+                <h3>Parikshit Khanna</h3>
+                
+                
+                <p>Expert in SEO and PPC campaigns</p>
+            <p> + 20 year Experience</p>
+            </div>
+            <div class="instructor-item">
+                <img src="https://www.shutterstock.com/image-photo/successful-website-designer-standing-crossed-260nw-613363232.jpg" alt="Jane Smith">
+                <h3>Jane Smith</h3>
+               
+                <p>Social Media Marketing Specialist</p>
+                <p> + 20 year Experience</p>
+            </div>
+        </div>
+    </section>
+    <section id="Our services" class="services">
+        <h2>Why Choose Us?</h2>
+        <p><strong>Digitizer Marketing Management isn’t just another agency — we’re your partners in success.</strong></p>
+        <div class="why-choose-cards">
+            <div class="choose-card">
+               
+                <h3>Expert Team</h3>
+                <p>Our dedicated experts bring years of experience to drive your success.</p>
+            </div>
+            <div class="choose-card">
+         
+                <h3>Proven Success</h3>
+                <p>Trusted results across the UAE market with top-performing campaigns.</p>
+            </div>
+            <div class="choose-card">
+              
+                <h3>Innovation First</h3>
+                <p>We use data-driven, cutting-edge strategies to maximize ROI.</p>
+            </div>
+            <div class="choose-card">
+                
+                <h3>All-in-One Service</h3>
+                <p>Everything you need from strategy to execution under one roof.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    
+
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>At Digitizer Marketing Management, our mission is to empower businesses through innovative digital marketing solutions that drive growth, enhance brand visibility, and improve online presence.</p>
+        <p>We specialize in SEO optimization, social media marketing, pay-per-click advertising (PPC), content marketing, and website design and development to help businesses reach their full potential in the digital space.</p>
+    </section>
+
+    <section id="client-success">
+        <h2>Client Success Stories</h2>
+        <div class="testimonial">
+            <p>"Partnering with this agency has been the best decision for our brand. They not only built an outstanding website but also handled our social media, SEO, and performance marketing with precision." - Sophia Khan, Head of Marketing</p>
+        </div>
+        <div class="testimonial">
+            <p>"The team exceeded our expectations in every way. Their photography, videography, and branding strategies helped us build a strong identity." - James Brown, Marketing Specialist</p>
+        </div>
+    </section>
+    <section class="offer-section">
+        <h2>🔥 Limited Time Offer 🔥</h2>
+        <p class="offer-highlight">Get 50% Off All Courses – Offer Ends In:</p>
+        <div class="countdown-timer" id="countdown">
+          <div class="timer-box"><div id="days">00</div><span>Days</span></div>
+          <div class="timer-box"><div id="hours">00</div><span>Hours</span></div>
+          <div class="timer-box"><div id="minutes">00</div><span>Minutes</span></div>
+          <div class="timer-box"><div id="seconds">00</div><span>Seconds</span></div>
+        </div>
+     </section>
+     <script>
+     const endDate = new Date("May 31, 2025 23:59:59").getTime();
+
+const countdownFunc = setInterval(function () {
+  const now = new Date().getTime();
+  const distance = endDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("days").innerText = days.toString().padStart(2, '0');
+  document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+  document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+  document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+
+  if (distance < 0) {
+    clearInterval(countdownFunc);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+      
+    
+
+    <section id="press-releases">
+        <h2>Press Releases</h2>
+        <p>Stay up to date with key developments, industry insights, and major milestones as we continue to shape the future of digital marketing.</p>
+        <ul>
+            <li><a href="#">How to Conduct Effective Keyword Research for a Competitive Niche</a></li>
+            <li><a href="#">How to Create Content That Is Engaging and Ranks High</a></li>
+            <li><a href="#">From Likes to Sales: Driving Business Growth with Influencer Marketing in Dubai</a></li>
+        </ul>
+    </section>
+
+    <section id="newsletter">
+        <h2>Get Exclusive Digital Marketing Updates</h2>
+        <p>Stay informed with the latest trends and news in digital marketing directly in your inbox.</p>
+        <form action="#" method="post">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <div class="contact-details">
+            <p>Contact us at:</p>
+            <p>Phone: +971 52 286 0547</p>
+            <p>Phone: 043361446</p>
+            <p>Email: info@digitizer.ae</p>
+            <p>Address: 904, Al Maktoum Rd, Al Serkal 2 Building, Deira, Dubai</p>
+        </div>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Whatsapp</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2024 Digitizer Marketing System. All rights reserved.</p>
+        <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+
+</html>
+
+
+
